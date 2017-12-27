@@ -2,9 +2,17 @@ import React, {Component} from 'react';
 import './Counter.css';
 
 class Counter extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {counter: 0};
+    }
+
+    onCounterClick = () => {
+        this.setState({counter: this.state.counter + 1});
+    }
 
     render() {
-        const button = <button className="button" onClick={this.props.onCounterClick}>
+        const button = <button className="button" onClick={this.onCounterClick}>
             CLICK HERE
         </button>;
 
@@ -13,7 +21,7 @@ class Counter extends Component {
                 Counter is:
             </div>
             <div className="counter_value">
-                {this.props.counter}
+                {this.state.counter}
             </div>
             {button}
         </div>);
