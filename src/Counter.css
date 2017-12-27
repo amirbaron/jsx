@@ -1,0 +1,17 @@
+.counter_container {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-around;
+    max-width: 300px;
+}
+
+.counter_label {
+
+}
+
+.counter_value {
+
+}
+.button {
+    color: cornflowerblue;
+}
