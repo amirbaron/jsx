@@ -13,12 +13,12 @@ class Greeter extends Component {
     }
 
     render() {
-        return (<div>
+        return (<span>
             <input onChange={this.onChange}/>
-            <div>
+            <span>
                 Hey {this.state.greet}
-            </div>
-        </div>);
+            </span>
+        </span>);
 
     }
 }
